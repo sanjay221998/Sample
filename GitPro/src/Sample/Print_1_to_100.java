@@ -1,4 +1,4 @@
-package My_Recorsion;
+package Sample;
 
 public class Print_1_to_100 {
 	void disp(int n)
