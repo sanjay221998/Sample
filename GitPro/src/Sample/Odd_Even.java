@@ -1,4 +1,4 @@
-package My_Recorsion;
+package Sample;
 
 public class Odd_Even {
 	int number(int n)

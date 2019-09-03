@@ -14,7 +14,7 @@ public class Print_1_to_100 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Print_1_to_100 obj=new Print_1_to_100();
-		obj.disp(10);
+		obj.disp(100);
 	}
 
 }
