@@ -21,7 +21,7 @@ public class MissingNoInArray {
 		//	int num=Arrays.stream(a).sum();//using predefine method
 		//System.out.println(Arrays.stream(a).sum());
 		int missNo=expeted-sum;
-		System.out.println(missNo);
+		System.out.println("MissingNo="+missNo);
 		
 	}
 
