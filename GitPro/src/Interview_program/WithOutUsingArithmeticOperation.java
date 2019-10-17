@@ -1,21 +1,16 @@
 package Interview_program;
-
 public class WithOutUsingArithmeticOperation {
 	int sum(int a, int b) {
-		int c = a;
-		int d = b;
+		int c = a;int d = b;
 		while (b != 0) {
-			int carry = (a & b); // CARRY is AND of two bits
-			a = a ^ b; // SUM of two bits is A XOR B
-			b = carry << 1; // shifts carry to 1 bit to calculate sum
-		}
+			int carry = (a & b);
+			a = a ^ b;			
+			b = carry << 1;}
 		System.out.println(c + "+" + d + "=" + a);
 		return a;
 	}
-
 	int sub(int x, int y) {
-		int a = x;
-		int b = y;
+		int a = x;int b = y;	
 		while (y != 0) {
 			int borrow = (~x) & y;
 			x = x ^ y;
@@ -25,9 +20,7 @@ public class WithOutUsingArithmeticOperation {
 		return x;
 	}
 	int mul() {
-		int n = 10;
-		int c = 5;
-		int product = 0;
+		int n = 10;int c = 5;int product = 0;		
 		for (int i = 0; i < c; i++) {
 			product = product + n;
 		}
@@ -45,7 +38,6 @@ public class WithOutUsingArithmeticOperation {
 		System.out.print(c + "/" + d + "=" + "quotient:" + remainder + "    remainder:" + a);
 		return remainder;
 	}
-
 	public static void main(String[] args) {
 		WithOutUsingArithmeticOperation d = new WithOutUsingArithmeticOperation();
 		d.sum(4, 6);
