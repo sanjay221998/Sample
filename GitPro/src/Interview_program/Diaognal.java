@@ -12,12 +12,15 @@ public class Diaognal {
 		//System.out.println("Enter num of lines");
 		//int j=scr.nextInt();
 		String w=a.replaceAll(" ", "");
+		String s=" ";
+		String s2=" ";
+		System.out.println(a.replaceAll(" ", ""));
 		//System.out.println(a.trim());
 		char[] b=w.toCharArray();
 		for(char cc:b)
-			System.out.print(cc+"\n");//verification
+			System.out.print(cc+"\n");
 
-		for(int i=0;i<b.length;i++)
+		/*for(int i=0;i<w.length();i++)
 		{
 			
 			if((i==0)||(i%2==0))
@@ -26,12 +29,29 @@ public class Diaognal {
 			}
 		}
 			System.out.println();
-			for(int k=0;k<b.length;k++)
+			for(int k=0;k<w.length();k++)
 			{
 			if(k%2==1)
 			{
 				System.out.print(" "+b[k]);
 			}
+		}*/
+		for(int i=0;i<b.length;i++)
+		{
+			if((i==0)||(i%2==0))
+			{
+			System.out.print(b[i]+" ");
+				
+			}
+			
+			if(i%2!=0)
+			{
+				System.out.print(" "+b[i]);
+				
+			}
+			
+			
+			System.out.println();
 		}
 
 
